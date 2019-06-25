@@ -49,7 +49,7 @@ public class DbApi {
             int n = preparedStatement.executeUpdate();
 
             if (n != 0 && n != 1) {
-                throw new SQLException("");
+                throw new SQLException("Name is not unique");
             }
 
             return n;
